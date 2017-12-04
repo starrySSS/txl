@@ -20,7 +20,14 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./app/');
 
+//路径常量
+define('PUBLIC_PATH','/txl/Public');
+define('IMG_PATH',PUBLIC_PATH.'/img');
+define('JS_PATH',PUBLIC_PATH.'/js');
+define('CSS_PATH',PUBLIC_PATH.'/css');
+
+
+
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
-
 // 亲^_^ 后面不需要任何代码了 就是如此简单

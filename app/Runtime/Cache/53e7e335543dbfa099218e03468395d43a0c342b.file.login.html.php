@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-12-04 23:13:30
+<?php /* Smarty version Smarty-3.1.6, created on 2017-12-05 00:48:52
          compiled from "./app/Home/View\User\login.html" */ ?>
 <?php /*%%SmartyHeaderCode:212505a2564437cc1c0-67459938%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '53e7e335543dbfa099218e03468395d43a0c342b' => 
     array (
       0 => './app/Home/View\\User\\login.html',
-      1 => 1512400407,
+      1 => 1512406131,
       2 => 'file',
     ),
   ),
@@ -31,9 +31,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/txl/Public/css/reset.css">
-    <link rel="stylesheet" href="/txl/Public/css/supersized.css">
-    <link rel="stylesheet" href="/txl/Public/css/style.css">
+    <link rel="stylesheet" href="<?php echo @CSS_PATH;?>
+/reset.css">
+    <link rel="stylesheet" href="<?php echo @CSS_PATH;?>
+/supersized.css">
+    <link rel="stylesheet" href="<?php echo @CSS_PATH;?>
+/style.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -43,30 +46,73 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </head>
 
 <body>
-
+<!--<a href="/txl/index.php/home/index/index.html">123</a>-->
+<h1 style="color:red"><?php echo $_SESSION['user']['name'];?>
+</h1>
 <div class="page-container">
     <h1>登录</h1>
     <form action="" method="post">
-        <input type="text" name="username" class="username" placeholder="用户名">
-        <input type="password" name="password" class="password" placeholder="密码">
+        <input type="text" id="username" name="username" class="username" placeholder="用户名">
+        <input type="password" id="password" name="password" class="password" placeholder="密码">
         <button type="submit">提交</button>
         <div class="error"><span>+</span></div>
     </form>
-    <div class="connect">
-        <p>Or connect with:</p>
-        <p>
-            <a class="facebook" href=""></a>
-            <a class="twitter" href=""></a>
-        </p>
-    </div>
 </div>
 
 <!-- Javascript -->
-<script src="/txl/Public/js/jquery-1.8.2.min.js"></script>
-<script src="/txl/Public/js/supersized.3.2.7.min.js"></script>
-<script src="/txl/Public/js/supersized-init.js"></script>
-<script src="/txl/Public/js/scripts.js"></script>
+<script src="<?php echo @JS_PATH;?>
+/jquery-1.8.2.min.js"></script>
+<script src="<?php echo @JS_PATH;?>
+/supersized.3.2.7.min.js"></script>
+<script src="<?php echo @JS_PATH;?>
+/supersized-init.js"></script>
+<script>
 
+    jQuery(document).ready(function() {
+
+        $('.page-container form').submit(function(){
+            var username = $(this).find('.username').val();
+            var password = $(this).find('.password').val();
+            if(username == '') {
+                $(this).find('.error').fadeOut('fast', function(){
+                    $(this).css('top', '27px');
+                });
+                $(this).find('.error').fadeIn('fast', function(){
+                    $(this).parent().find('.username').focus();
+                });
+                return false;
+            }
+            if(password == '') {
+                $(this).find('.error').fadeOut('fast', function(){
+                    $(this).css('top', '96px');
+                });
+                $(this).find('.error').fadeIn('fast', function(){
+                    $(this).parent().find('.password').focus();
+                });
+                return false;
+            }
+            console.log(username);
+            $.ajax({
+                type: "POST",
+                url: "http://localhost/txl/index.php/home/user/verification.html",
+                data: {username:username, password:password},
+                dataType: "json",
+                success: function(data){
+                    if(data.status == 'success'){
+                        alert("success");
+                    }else{
+                        alert(data.message);
+                    }
+                }
+            });
+        });
+
+        $('.page-container form .username, .page-container form .password').keyup(function(){
+            $(this).parent().find('.error').fadeOut('fast');
+        });
+
+    });
+</script>
 </body>
 
 </html>

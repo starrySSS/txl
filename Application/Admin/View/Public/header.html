@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="__PUBLIC__/Admin/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/Admin/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/amazeui.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/admin.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/app.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/page.css">
+    <script src="__PUBLIC__/Admin/js/echarts.min.js"></script>
+</head>
+
+<body data-type="index">
+
+
+    <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+            <a href="javascript:;" class="tpl-logo">
+                <img src="__PUBLIC__/Home/img/logo.png" alt="logo" style="width: 50%;height: 50%;border-radius: 100%;">
+            </a>
+        </div>
+        <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+        </div>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+
+                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                        <span class="tpl-header-list-user-nick">欢迎您：{$user['username']}</span><span class="tpl-header-list-user-ico"> <img src="__PUBLIC__/Admin/img/user01.png"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="__MODULE__/login/logout.html"><span class="am-icon-power-off"></span> 退出</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li> -->
+            </ul>
+        </div>
+    </header>
+    <div class="tpl-page-container tpl-page-header-fixed">
+
+
+        <div class="tpl-left-nav tpl-left-nav-hover">
+            <div class="tpl-left-nav-title">
+                管理列表
+            </div>
+            <div class="tpl-left-nav-list">
+                <ul class="tpl-left-nav-menu">
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list <if condition='($index eq index) OR ($index eq copyright)'>active</if>">
+                            <i class="am-icon-home"></i>
+                            <span>首页</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" <if condition="($index eq 'index') OR ($index eq 'copyright')"> style="display: block;"</if>>
+                            <li>
+                                <a href="__APP__/Admin/index/index.html" <if condition='$index eq "index"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>通讯录</span>
+                                </a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-home"></i>
+                            <span>用户日志</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" <if condition='($index eq "product") OR ($index eq "productbanner")'>style="display: block;"</if>>
+                            <li>
+                                <!-- <a href="__APP__/Admin/index/productbanner.html" <if condition='$index eq "productbanner"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>横幅图</span>
+                                </a> -->
+                                <a href="__APP__/Admin/index/product.html" <if condition='$index eq "product"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>用户日志</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-home"></i>
+                            <span>组织架构</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" <if condition='($index eq "news") OR ($index eq "newsbanner")'>style="display: block;"</if>>
+                            <li>
+                                <!-- <a href="__APP__/Admin/index/newsbanner.html" <if condition='$index eq "newsbanner"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>横幅图</span>
+                                </a> -->
+                                <a href="__APP__/Admin/index/news.html" <if condition='$index eq "news"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>组织架构</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li> 
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-home"></i>
+                            <span>留言管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" <if condition='($index eq "news") OR ($index eq "newsbanner")'>style="display: block;"</if>>
+                            <li>
+                                <!-- <a href="__APP__/Admin/index/newsbanner.html" <if condition='$index eq "newsbanner"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>横幅图</span>
+                                </a> -->
+                                <a href="__APP__/Admin/index/getMsg.html" <if condition='$index eq "news"'>class="active"</if>>
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>留言管理</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li> 
+                </ul>
+            </div>
+        </div>

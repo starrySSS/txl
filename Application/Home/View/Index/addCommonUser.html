@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>企业通讯录</title>
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/amazeui.css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/core.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/menu.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/index.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/admin.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/page/typography.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Home/css/page/form.css" />
+	</head>
+	<body>
+		<!-- Begin page -->
+		<header class="am-topbar am-topbar-fixed-top">		
+			<div class="am-topbar-left am-hide-sm-only">
+                <a href="index.html" class="logo"><span>企业通讯录</span><i class="zmdi zmdi-layers"></i></a>
+            </div>
+	
+			<div class="contain">
+				<ul class="am-nav am-navbar-nav am-navbar-left">
+
+					<li><h4 class="page-title">新增联系人</h4></li>
+				</ul>
+				
+				<ul class="am-nav am-navbar-nav am-navbar-right"> 
+					<!-- <li class="hidden-xs am-hide-sm-only">
+					                        <form role="search" class="app-search">
+					                            <input type="text" placeholder="Search..." class="form-control">
+					                            <a href=""><img src="__PUBLIC__/Home/img/search.png"></a>
+					                        </form>
+					                    </li> -->
+				</ul>
+			</div>
+		</header>
+		<!-- end page -->
+		
+		
+		<div class="admin">
+			<!--<div class="am-g">-->
+		<!-- ========== Left Sidebar Start ========== -->
+		<!--<div class="left side-menu am-hide-sm-only am-u-md-1 am-padding-0">
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 548px;">
+				<div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 548px;">-->
+                  <!-- sidebar start -->
+				  <div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
+				    <div class="am-offcanvas-bar admin-offcanvas-bar">
+				    	<!-- User -->
+						<div class="user-box">
+	                        <div class="user-img">
+	                            <img src="__PUBLIC__{$_SESSION['user']['touxiang']}" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
+	                            <div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="false"></i></div>
+	                        </div>
+	                        <h5><a href="#">{$_SESSION['user']['username']}</a> </h5>
+	                        <ul class="list-inline">
+	                            <li>
+	                                <a href="#">
+	                                    <i class="fa fa-cog" aria-hidden="true"></i>
+	                                </a> 
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <!-- End User -->
+	            
+						 <ul class="am-list admin-sidebar-list">
+						    <li><a href="__CONTROLLER__/index.html"><span class="am-icon-home"></span> 通讯录</a></li>
+						    <li class="admin-parent">
+						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}" href="__CONTROLLER__/table_complete.html"><span class="am-icon-table"></span> 常用联系人  </a>
+						      
+						    </li> 
+						    <li class="admin-parent">
+						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+						        <li><a href="__CONTROLLER__/form_validate.html" class="am-cf"> 个人中心</a></li>
+						        <li><a href="__CONTROLLER__/form_basic.html">意见反馈</a></li>   
+						        <li><a href="__CONTROLLER__/logout.html">退出</a></li>   
+						      </ul>
+						    </li>
+						  </ul>
+				</div>	  
+			</div>
+				  <!-- sidebar end -->
+    
+				<!--</div>
+			</div>
+		</div>-->
+		<!-- ========== Left Sidebar end ========== -->
+		
+		
+		
+	<!--	<div class="am-g">-->
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<div class="content-page">
+			 	
+			
+			<!-- col start -->
+				<div class="am-g">
+					<div class="card-box"> 
+						<form class="am-form am-form-horizontal" method="post" action="__SELF__">  
+  				          <div class="am-input-group am-input-group-sm">
+  				            <input type="text" class="am-form-field" name="search" placeholder="输入联系人名称查找">
+  				          <span class="am-input-group-btn">
+  				            <input class="am-btn am-btn-default" type="submit">搜索</input> 
+				          </span>
+				          </div>  
+						</form>
+					</div>
+					<volist name='list' id='v'>
+						<div class="am-u-md-3 am-u-end">
+							<div class="card-box widget-user">
+                                <div>
+                                    <img src="__PUBLIC__/{$v.touxiang}" class="img-responsive img-circle" alt="user"  style="width: 100px;height: 100px;">
+                                    <div class="wid-u-info" style="margin-left: 10px;margin-top: 10px;">
+                                        <h4 class="m-t-0 m-b-5 font-600">{$v.username}</h4>
+                                        <h4 class="m-t-0 m-b-5 font-600">{$v.userid}</h4>
+                                        <h4 class="m-t-0 m-b-5 font-600">{$v.sex}</h4>
+                                        <p class="text-muted m-b-5 font-13">邮箱：{$v.email}</p>
+                                     	<p class="text-muted m-b-5 font-13"><a href="tel:   {$v.tel}"> tel:{$v.tel}</a></p> 
+                                        <small class="text-warning"><b>部门：{$v.title}</b></small>  
+                                         <h4 class="m-t-0 m-b-5 font-600"><a href="__CONTROLLER__/searchCommUser/userid/{$v.id}">添加到常用联系人</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						 </volist> 	
+				</div>
+				<!-- col end --> 
+			</div> 
+						
+			</div> 
+		</div>
+		<!-- end right Content here -->
+		<!--</div>-->
+		</div>
+		</div>
+		
+		<!-- navbar -->
+		<a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
+		
+		<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/amazeui.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/app.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/blockUI.js" ></script>
+	</body>
+	
+</html>

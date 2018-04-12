@@ -1,0 +1,12 @@
+[ 2017-12-18T16:31:12+08:00 ] 127.0.0.1 /tongxun/admin.php/Home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+ERR: 无法加载模块:Admin.php
+
+[ 2017-12-18T16:31:20+08:00 ] 127.0.0.1 /tongxun/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+ERR: 无法加载模块:Css
+

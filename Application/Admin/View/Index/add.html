@@ -1,0 +1,134 @@
+<include file="Public:header" />
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                添加
+            </div>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 列表
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" action="__SELF__" enctype="multipart/form-data" method="post">
+                                <div class="am-form-group">
+                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">用户头像<span class="tpl-form-line-small-title">Images</span></label>
+                                    <div class="am-u-sm-9">
+                                        <div class="am-form-group am-form-file">
+                                            <div class="tpl-form-file-img">
+                                                <notempty name="home['touxiang']">
+                                                    <img src="__PUBLIC__/{$home.touxiang}" alt="">
+                                                </notempty>
+                                            </div>
+                                            <button type="button" class="am-btn am-btn-danger am-btn-sm">
+                                            <i class="am-icon-cloud-upload"></i> 添加</button>
+                                            <input id="doc-form-file" type="file" value="{$home.touxiang}" name="img" multiple>
+                                        </div> 
+                                    </div>
+                                     <div class="am-form-group">
+                                    <label for="user-Phone" class="am-u-sm-3 am-form-label">账号（手机号） <span class="tpl-form-line-small-title">Phone</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="user-Phone" name="tel" value="{$home.tel}" placeholder="请输入手机号" required="required">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-Password" class="am-u-sm-3 am-form-label">密码<span class="tpl-form-line-small-title">Password</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="user-Password" name="password" value="{$home.password}" placeholder="请输入密码" required="required">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-Username" class="am-u-sm-3 am-form-label">用户名称<span class="tpl-form-line-small-title">Username</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="user-Username" name="username" value="{$home.username}" placeholder="请输入用户名称" required="required">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-Email" class="am-u-sm-3 am-form-label">邮箱<span class="tpl-form-line-small-title">Email</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="user-Email" name="email" value="{$home.email}" placeholder="请输入邮箱" required="required">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-Sex" class="am-u-sm-3 am-form-label">性别<span class="tpl-form-line-small-title">Sex</span></label>
+                                     <label class="am-radio-inline">
+                                        <input type="radio"  value="男" name="sex" <?php  if($home['sex'] == '男'){ echo  ' checked="checked"';}?> required> 男
+                                      </label>
+                                      <label class="am-radio-inline">
+                                        <input type="radio" value="女" name="sex" <?php  if($home['sex'] == '女'){ echo  ' checked="checked"';}?>> 女
+                                      </label>
+                                </div>
+                                  <div class="am-form-group">
+                                    <label for="user-Department" class="am-u-sm-3 am-form-label">部门<span class="tpl-form-line-small-title">Department</span></label>
+                                    <label class="am-radio-inline">
+                                    <select id="user-Department"  class="am-u-sm-9" name="bumen" required>
+                                        <volist name='bumen' id='v'>
+                                        <option value="{$v['id']}" <?php if($home['bumen'] == $v['id']){echo ' selected = "selected"';}?>>{$v.title}</option> 
+                                        </volist>
+                                    </select> 
+                                    </label>
+                                </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tpl-alert"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/amazeui.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/iscroll.js"></script>
+    <script src="__PUBLIC__/Admin/js/app.js"></script>
+</body>
+</html>
+<script>
+    //图片及时显示
+    $("#doc-form-file").on('change',function(){
+        var img  = this.files[0];//获取图片信息
+        var type = img.type;//获取图片类型，判断使用
+        var url  = getObjectURL(this.files[0]);//使用自定义函数，获取图片本地url
+        // var fd   = new FormData();//实例化表单，提交数据使用
+        var imglength = $(".tpl-form-file-img").find("img").length;
+        if(imglength>0){
+            $(".tpl-form-file-img").find('img').replaceWith('<img src="'+url+'" alt="">');
+        }else{
+            $(".tpl-form-file-img").append('<img src="'+url+'" alt="">');
+        }
+        
+    })
+    //获取图片url
+    function getObjectURL(file) {
+        var url = null ; 
+        if (window.createObjectURL!=undefined) { // basic
+          url = window.createObjectURL(file) ;
+        } else if (window.URL!=undefined) { // mozilla(firefox)
+          url = window.URL.createObjectURL(file) ;
+        } else if (window.webkitURL!=undefined) { // webkit or chrome
+          url = window.webkitURL.createObjectURL(file) ;
+        }
+        return url ;
+    }
+</script>

@@ -1,0 +1,96 @@
+<include file="Public:header" />
+        <div class="tpl-content-wrapper"> 
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 部门列表
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                 </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tpl-block">
+                    <div class="am-g" style="margin-bottom: 10px;">
+                        <div class="am-u-sm-12 am-u-md-6">
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group am-btn-group-xs">
+                                    <a href="__CONTROLLER__/addnews.html" type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-g">
+                        <div class="tpl-table-images am-scrollable-horizontal">
+                            <table class="am-table am-table-striped am-table-hover table-main ">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-title">序号</th>
+                                            <th class="table-title" style="width: 25%">部门名称</th> 
+                                            <th class="table-date am-hide-sm-only">修改日期</th>
+                                            <th class="table-set">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="news" id="v">
+                                        <tr>
+                                            <td>{$i}</td> 
+                                            <td>{$v.title}</td> 
+                                            <td class="am-hide-sm-only">{$v.ctime}</td>
+                                            <td>
+                                                <div class="am-btn-toolbar">
+                                                    <div class="am-btn-group am-btn-group-xs">
+                                                        <a href="__CONTROLLER__/addnews/id/{$v.id}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                                                        <button onclick="del({$v.id})" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                </tbody>
+                            </table>
+                            <div class="am-u-lg-12">
+                                <div class="am-cf">
+                                    <div class="am-fr">
+                                        {$page}
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tpl-alert"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="__PUBLIC__/Admin/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/amazeui.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/iscroll.js"></script>
+    <script src="__PUBLIC__/Admin/js/app.js"></script>
+</body>
+</html>
+<script>
+    function del(id){
+        var type = 'news';
+    if(confirm("您确定要删除吗?")){
+        $.post("__CONTROLLER__/del",{id:id,type:type},function(msg){
+        if(msg==1){
+          window.location.href="";
+        }else{
+            alert('管理员，超级管理员不能删除！');
+        }
+      })
+    }
+}
+</script>

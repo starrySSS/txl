@@ -1,0 +1,454 @@
+[ 2018-03-05T10:11:08+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000504s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001868s ]
+
+[ 2018-03-05T10:11:12+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = 'admin' AND `password` = 'admin' AND `status` > 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+
+[ 2018-03-05T10:11:12+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = 'admin' AND `password` = 'admin' AND `status` > 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001175s ]
+
+[ 2018-03-05T10:11:12+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+ERR: 非法操作:css
+
+[ 2018-03-05T10:11:15+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003084s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0079s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 )  [ RunTime:0.0375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000646s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002622s ]
+
+[ 2018-03-05T10:11:29+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0538s ]
+SQL: SELECT a.*,b.username FROM a_log a left join a_user b on b.id = a.uid  ORDER BY a.id asc  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 68 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 83 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 87 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 102 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 106 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 121 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 125 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 179 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003231s ]
+
+[ 2018-03-05T10:11:36+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+SQL: SHOW COLUMNS FROM `a_bumen` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_bumen` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `a_bumen` WHERE ( status=1 ) LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000464s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\33d78a532dce9c56cf1d796e9a7153d7.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\33d78a532dce9c56cf1d796e9a7153d7.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003016s ]
+
+[ 2018-03-05T10:11:45+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003286s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0079s ]
+SQL: SELECT a.*,b.username FROM a_log a left join a_user b on b.id = a.uid  ORDER BY a.id asc  [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000746s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 68 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 83 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 87 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 102 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 106 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 121 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 125 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 179 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003150s ]
+
+[ 2018-03-05T10:11:49+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003172s ]
+SQL: SHOW COLUMNS FROM `a_bumen` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_bumen` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `a_bumen` WHERE ( status=1 ) LIMIT 0,8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000525s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000792s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\33d78a532dce9c56cf1d796e9a7153d7.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\33d78a532dce9c56cf1d796e9a7153d7.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002907s ]
+
+[ 2018-03-05T10:12:45+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003124s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0086s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000505s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000762s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003145s ]
+
+[ 2018-03-05T10:37:41+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+SQL: SHOW COLUMNS FROM `a_bumen` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `a_bumen` WHERE ( status = 1 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `a_user` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000592s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000878s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 68 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 83 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 87 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 102 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 106 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 121 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003478s ]
+
+[ 2018-03-05T10:39:40+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002185s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\tongxun\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0075s ]
+SQL: SELECT `id` FROM `a_user` WHERE ( tel = 18725769395 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `a_user` (`tel`,`password`,`username`,`email`,`sex`,`bumen`,`touxiang`,`status`,`ctime`) VALUES ('18725769395','11111','mi','vim@deloitte.com.cn','女','6','./Uploads/2018-03-05/5a9cadec27334.jpg','1','2018-03-05 10:39:40') [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001304s ]
+
+[ 2018-03-05T10:39:40+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Index/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+ERR: 非法操作:css
+
+[ 2018-03-05T10:39:42+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002290s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0076s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000504s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002034s ]
+
+[ 2018-03-05T12:46:10+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000784s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011609s ]
+
+[ 2018-03-05T12:46:10+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Index/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001801s ]
+
+[ 2018-03-05T12:46:17+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015475s ]
+
+[ 2018-03-05T12:46:50+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = 'admin' AND `password` = 'admin' AND `status` > 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001322s ]
+
+[ 2018-03-05T12:46:50+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/Login/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+ERR: 非法操作:css
+
+[ 2018-03-05T12:46:52+08:00 ] 127.0.0.1 /tongxun/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0076s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000566s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+NOTIC: [8] Undefined variable: page F:\wamp\www\tongxun\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001921s ]
+

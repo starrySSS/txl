@@ -1,0 +1,120 @@
+[ 2018-01-03T22:04:20+08:00 ] 127.0.0.1 /tongxun/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003644s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 9 行.
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.013693s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009526s ]
+
+[ 2018-01-03T22:04:23+08:00 ] 127.0.0.1 /tongxun/index.php/Home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002380s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019619s ]
+
+[ 2018-01-03T22:04:27+08:00 ] 127.0.0.1 /tongxun/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001831s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.1791s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = '13333333333' AND `password` = 'test' AND `status` = 1 LIMIT 1   [ RunTime:0.0469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001448s ]
+
+[ 2018-01-03T22:20:10+08:00 ] 127.0.0.1 /tongxun/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002134s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = '11111' AND `password` = 'test1' AND `status` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000459s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001244s ]
+
+[ 2018-01-03T22:20:22+08:00 ] 127.0.0.1 /tongxun/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003439s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = '1333333333' AND `password` = 'test' AND `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001858s ]
+
+[ 2018-01-03T22:20:36+08:00 ] 127.0.0.1 /tongxun/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = '18323314676' AND `password` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001403s ]
+

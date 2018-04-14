@@ -22,3 +22,33 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001569s ]
 ERR: 无法加载模块:Public
 
+[ 2018-04-14T11:32:47+08:00 ] ::1 /txl/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T16:26:41+08:00 ] ::1 /txl/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033177s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T21:45:37+08:00 ] ::1 /txl/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000153s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001593s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T21:45:52+08:00 ] ::1 /txl/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T21:47:06+08:00 ] ::1 /txl/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+ERR: 无法加载模块:Public
+

@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="/tongxun3/Public/Admin/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="/tongxun3/Public/Admin/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/txl/Public/Admin/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/txl/Public/Admin/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/tongxun3/Public/Admin/css/amazeui.min.css" />
-    <link rel="stylesheet" href="/tongxun3/Public/Admin/css/admin.css">
-    <link rel="stylesheet" href="/tongxun3/Public/Admin/css/app.css">
-    <link rel="stylesheet" href="/tongxun3/Public/Admin/css/page.css">
-    <script src="/tongxun3/Public/Admin/js/echarts.min.js"></script>
+    <link rel="stylesheet" href="/txl/Public/Admin/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/txl/Public/Admin/css/admin.css">
+    <link rel="stylesheet" href="/txl/Public/Admin/css/app.css">
+    <link rel="stylesheet" href="/txl/Public/Admin/css/page.css">
+    <script src="/txl/Public/Admin/js/echarts.min.js"></script>
 </head>
 
 <body data-type="index">
@@ -25,7 +25,7 @@
     <header class="am-topbar am-topbar-inverse admin-header">
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
-                <img src="/tongxun3/Public/Admin/img/logo.jpg" alt="logo" style="width: 50%;height: 50%;border-radius: 100%;">
+                <img src="/txl/Public/Admin/img/logo.jpg" alt="logo" style="width: 50%;height: 50%;border-radius: 100%;">
             </a>
         </div>
         <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
@@ -38,10 +38,10 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">欢迎您：<?php echo ($user['username']); ?></span><!--<span class="tpl-header-list-user-ico"> <img src="/tongxun3/Public/Admin/img/user01.png"></span>-->
+                        <span class="tpl-header-list-user-nick">欢迎您：<?php echo ($user['username']); ?></span><!--<span class="tpl-header-list-user-ico"> <img src="/txl/Public/Admin/img/user01.png"></span>-->
                     </a>
                     <ul class="am-dropdown-content">
-                        <li><a href="/tongxun3/index.php/Admin/login/logout.html"><span class="am-icon-power-off"></span> 退出</a></li>
+                        <li><a href="/txl/index.php/Admin/login/logout.html"><span class="am-icon-power-off"></span> 退出</a></li>
                     </ul>
                 </li>
                 <!-- <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li> -->
@@ -65,7 +65,7 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" <?php if(($index == 'index') OR ($index == 'copyright')): ?>style="display: block;"<?php endif; ?>>
                             <li>
-                                <a href="/tongxun3/index.php/Admin/index/index.html" <?php if($index == "index"): ?>class="active"<?php endif; ?>>
+                                <a href="/txl/index.php/Admin/index/index.html" <?php if($index == "index"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-phone"></i>
                                     <span>通讯录</span>
                                 </a> 
@@ -80,11 +80,11 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" <?php if(($index == "product") OR ($index == "productbanner")): ?>style="display: block;"<?php endif; ?>>
                             <li>
-                                <!-- <a href="/tongxun3/index.php/Admin/index/productbanner.html" <?php if($index == "productbanner"): ?>class="active"<?php endif; ?>>
+                                <!-- <a href="/txl/index.php/Admin/index/productbanner.html" <?php if($index == "productbanner"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-angle-right"></i>
                                     <span>横幅图</span>
                                 </a> -->
-                                <a href="/tongxun3/index.php/Admin/index/product.html" <?php if($index == "product"): ?>class="active"<?php endif; ?>>
+                                <a href="/txl/index.php/Admin/index/product.html" <?php if($index == "product"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-calendar-check-o"></i>
                                     <span>用户日志</span>
                                 </a>
@@ -99,11 +99,11 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" <?php if(($index == "news") OR ($index == "newsbanner")): ?>style="display: block;"<?php endif; ?>>
                             <li>
-                                <!-- <a href="/tongxun3/index.php/Admin/index/newsbanner.html" <?php if($index == "newsbanner"): ?>class="active"<?php endif; ?>>
+                                <!-- <a href="/txl/index.php/Admin/index/newsbanner.html" <?php if($index == "newsbanner"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-angle-right"></i>
                                     <span>横幅图</span>
                                 </a> -->
-                                <a href="/tongxun3/index.php/Admin/index/news.html" <?php if($index == "news"): ?>class="active"<?php endif; ?>>
+                                <a href="/txl/index.php/Admin/index/news.html" <?php if($index == "news"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-sitemap"></i>
                                     <span>组织架构</span>
                                 </a>
@@ -118,11 +118,11 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" <?php if(($index == "news") OR ($index == "newsbanner")): ?>style="display: block;"<?php endif; ?>>
                             <li>
-                                 <!--<a href="/tongxun3/index.php/Admin/index/newsbanner.html" <?php if($index == "newsbanner"): ?>class="active"<?php endif; ?>>
+                                 <!--<a href="/txl/index.php/Admin/index/newsbanner.html" <?php if($index == "newsbanner"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-angle-right"></i>
                                     <span>横幅图</span>
                                 </a>--> 
-                                <a href="/tongxun3/index.php/Admin/index/getMsg.html" <?php if($index == "news"): ?>class="active"<?php endif; ?>>
+                                <a href="/txl/index.php/Admin/index/getMsg.html" <?php if($index == "news"): ?>class="active"<?php endif; ?>>
                                     <i class="am-icon-edit"></i>
                                     <span>留言管理</span>
                                 </a>
@@ -199,17 +199,17 @@
     </div>
 
 
-    <script src="/tongxun3/Public/Admin/js/jquery.min.js"></script>
-    <script src="/tongxun3/Public/Admin/js/amazeui.min.js"></script>
-    <script src="/tongxun3/Public/Admin/js/iscroll.js"></script>
-    <script src="/tongxun3/Public/Admin/js/app.js"></script>
+    <script src="/txl/Public/Admin/js/jquery.min.js"></script>
+    <script src="/txl/Public/Admin/js/amazeui.min.js"></script>
+    <script src="/txl/Public/Admin/js/iscroll.js"></script>
+    <script src="/txl/Public/Admin/js/app.js"></script>
 </body>
 </html>
 <script>
     function del(id){
         var type = 'product';
     if(confirm("您确定要删除吗?")){
-        $.post("/tongxun3/index.php/Admin/Index/del",{id:id,type:type},function(msg){
+        $.post("/txl/index.php/Admin/Index/del",{id:id,type:type},function(msg){
         if(msg==1){
           window.location.href="";
         }

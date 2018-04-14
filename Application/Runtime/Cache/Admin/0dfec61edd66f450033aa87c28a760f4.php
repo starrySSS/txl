@@ -10,12 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <link rel="icon" type="image/png" href="/tongxun3/Public/Admin/i/favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="/tongxun3/Public/Admin/i/app-icon72x72@2x.png">
+  <link rel="icon" type="image/png" href="/txl/Public/Admin/i/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/txl/Public/Admin/i/app-icon72x72@2x.png">
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-  <link rel="stylesheet" href="/tongxun3/Public/Admin/css/amazeui.min.css" />
-  <link rel="stylesheet" href="/tongxun3/Public/Admin/css/admin.css">
-  <link rel="stylesheet" href="/tongxun3/Public/Admin/css/app.css">
+  <link rel="stylesheet" href="/txl/Public/Admin/css/amazeui.min.css" />
+  <link rel="stylesheet" href="/txl/Public/Admin/css/admin.css">
+  <link rel="stylesheet" href="/txl/Public/Admin/css/app.css">
 </head>
 
 <body data-type="login">
@@ -33,7 +33,7 @@
 			login
 		</div>
 		<div class="am-u-sm-10 login-am-center">
-			<form class="am-form" action="/tongxun3/index.php/Admin/Login/login.html" method="post">
+			<form class="am-form" action="/txl/index.php/Admin/Login/login.html" method="post">
 				<fieldset>
 					<div class="am-form-group">
 						<input type="text" class="" name="username" id="doc-ipt-email-1" placeholder="输入用户名">
@@ -48,9 +48,9 @@
 	</div>
 </div>
 
-  <script src="/tongxun3/Public/Admin/js/jquery.min.js"></script>
-  <script src="/tongxun3/Public/Admin/js/amazeui.min.js"></script>
-  <script src="/tongxun3/Public/Admin/js/app.js"></script>
+  <script src="/txl/Public/Admin/js/jquery.min.js"></script>
+  <script src="/txl/Public/Admin/js/amazeui.min.js"></script>
+  <script src="/txl/Public/Admin/js/app.js"></script>
 </body>
 
 </html>

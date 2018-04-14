@@ -1,39 +1,39 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-vendor('PHPExcel.Classes.PHPExcel');
+vendor('PHPExcel.Classes.PHPExcel'); //导入第三方类库，调用的thinkPHP/library/Vendor/PHPExcel
 class IndexController extends BaseController {
-    public function __construct()
+    public function __construct()//构造函数，魔法方法
     {
-        parent::__construct(); 
+        parent::__construct(); //初始化子类的时候同时调用父类的__constrcut()
      }
+    
     //首页用户列表
     public function index()
     {
-    	$count = M("user")->where('status > 0')->count();
-        $Page = new \Think\Page($count,4);
-		echo $Page;
-        $home = M("user a")->field('a.*,b.title')->join('left join a_bumen b on b.id = a.bumen')->where('a.status > 0')->limit($Page->firstRow.','.$Page->listRows)->select();
+    	$count = M("user")->where('status > 0')->count();//获取页数
+        $Page = new \Think\Page($count,4);		
+        $home = M("user a")->field('a.*,b.title')->join('left join a_bumen b on b.id = a.bumen')->where('a.status > 0')->limit($Page->firstRow.','.$Page->listRows)->select();//调用分页函数
 		$Page->setConfig('next', 'next');
         $Page->setConfig('prev', 'prev');
-        $show = $Page->show(); // 分页显示输出
-        $this->assign('page', urldecode($show)); // 赋值分页输出
+        $show = $Page->show(); //ls分页显示输出
+        $this->assign('page', urldecode($show)); // 赋值分页输出，urldecode解码已编码的url地址
         $this->assign("home",$home);
         $this->assign('index','index');
-        $this->display();
+        $this->display();//输出对应模版
     }
 	
-     //添加、修改用户
+     //首页通讯录添加、修改用户
     public function add()
     {
-        $id = I("get.id"); 
+        $id = I("get.id"); //I =input ,输入变量，相当于相当于 $_GET['id']
         if(IS_POST){   
-            $data = I('post.'); 
+            $data = I('post.'); //提交所有字段
             if($_FILES['img']['size']){
-                $config = array('savePath'=>'./Uploads/','rootPath'=>'./Public/');
-                $upload = new \Think\Upload($config);// 实例化上传类
-                $info   =   $upload->uploadOne($_FILES['img']);
-                $pic = $info['savepath'].$info['savename']; 
+                $config = array('savePath'=>'./Uploads/','rootPath'=>'./Public/');//savePath设置上传子目录，rootPath设置上传目录
+                $upload = new \Think\Upload($config); // 实例化上传类
+                $info   =   $upload->uploadOne($_FILES['img']);//uploadOne上传一个文件
+                $pic = $info['savepath'].$info['savename']; //获取上传信息
                 $data['touxiang'] = $pic/*?substr($pic, 1):I("post.img")*/;
             } 
             switch ($data['bumen']) {
@@ -74,7 +74,7 @@ class IndexController extends BaseController {
         $this->assign("bumen",$bumen);  
         $this->display();
     } 
-    //删除
+    // 删除
     public function del()
     {
         $id = I("post.id");
@@ -161,9 +161,6 @@ class IndexController extends BaseController {
         $this->assign("bumen",$news);  
         $this->display();
     }
-	
-//	$log =M("log a")->field('a.*,b.username')->order('a.id desc')->join('left join a_user b on b.id=a.uid')->limit($Page->firstRow.','.$Page->listRows)->select();
-//	
 	
 	
     //导出通讯录

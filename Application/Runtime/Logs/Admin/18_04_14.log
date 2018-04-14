@@ -215,3 +215,195 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002533s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003038s ]
 
+[ 2018-04-14T11:32:47+08:00 ] ::1 /txl/index.php/Admin/Index/add/id/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002854s ]
+SQL: SHOW COLUMNS FROM `a_bumen` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `a_bumen` WHERE ( status = 1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `a_user` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000568s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 61 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 66 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 68 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 81 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 83 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 87 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 100 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 102 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 106 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 119 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 121 行.
+NOTIC: [8] Undefined variable: index F:\wamp\www\txl\Application\Runtime\Cache\Admin\b8c0556e904e1d0641126f3ef183ecde.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002816s ]
+
+[ 2018-04-14T16:26:40+08:00 ] ::1 /txl/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.082749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006128s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0982s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_user` WHERE ( status > 0 ) LIMIT 1   [ RunTime:0.0874s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0150s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 ) LIMIT 0,4   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000944s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001444s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\txl\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.501190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.501549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.073191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.073621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007067s ]
+
+[ 2018-04-14T21:34:13+08:00 ] ::1 /txl/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.033583s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.033911s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002078s ]
+
+[ 2018-04-14T21:45:33+08:00 ] ::1 /txl/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.1123s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = 'admin' AND `password` = 'admin' AND `status` > 1 LIMIT 1   [ RunTime:0.0284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000709s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002193s ]
+
+[ 2018-04-14T21:45:34+08:00 ] ::1 /txl/index.php/Admin/Login/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+ERR: 非法操作:css
+
+[ 2018-04-14T21:45:36+08:00 ] ::1 /txl/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_user` WHERE ( status > 0 ) LIMIT 1   [ RunTime:0.0339s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0158s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 ) LIMIT 0,4   [ RunTime:0.0376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000496s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\txl\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003604s ]
+
+[ 2018-04-14T21:45:52+08:00 ] ::1 /txl/index.php/Admin/index/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002050s ]
+SQL: SHOW COLUMNS FROM `a_bumen` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_bumen` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.1425s ]
+SQL: SELECT a.*,b.username FROM a_log a left join a_user b on b.id=a.uid  ORDER BY a.id desc LIMIT 0,8   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000452s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\txl\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+NOTIC: [8] Use of undefined constant copyright - assumed 'copyright' F:\wamp\www\txl\Application\Runtime\Cache\Admin\394283bae9774cfd50e961762da98983.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002841s ]
+
+[ 2018-04-14T21:47:06+08:00 ] ::1 /txl/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002520s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_user` WHERE ( status > 0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0122s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status > 0 ) LIMIT 0,4   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000620s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000899s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\wamp\www\txl\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002707s ]
+

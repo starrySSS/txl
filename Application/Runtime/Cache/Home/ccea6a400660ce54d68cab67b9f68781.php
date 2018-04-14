@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title></title>	
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/core.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/menu.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/amazeui.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/component.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/page/form.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/core.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/menu.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/amazeui.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/component.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/page/form.css" />
 	</head>
 	<body>
 		<div class="account-pages">
@@ -22,7 +22,7 @@
 	                    <h4 class="text-uppercase font-bold m-b-0">Sign In</h4>
 	                </div>
 	                <div class="panel-body">
-	                	<form class="am-form" action="/tongxun/index.php/Home/Index/login" method="post">
+	                	<form class="am-form" action="/tongxun3/index.php/Home/Index/login" method="post">
 	                		<div class="am-g">
 	                			<div class="am-form-group">
 							      <input type="text" class="am-radius"  placeholder="Phone Number" name="username">

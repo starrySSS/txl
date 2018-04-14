@@ -27,13 +27,20 @@ class IndexController extends Controller
     	}else{
     		$where = 'a.status >0 and a.id != '.$_SESSION['user']['id'];
     	}
-    	$list = M('user a')->field('a.*,b.title')->where($where)->join('left join a_bumen b on b.id = a.bumen')->select(); 
+		$count=M('user')->where('status>0')->count();
+		$Page = new \Think\Page($count,8);
+    	$list = M('user a')->field('a.*,b.title')->where($where)->join('left join a_bumen b on b.id = a.bumen')->limit($Page->firstRow.','.$Page->listRows)->select(); 
         foreach ($list as $key => $value) {
             $list[$key]['userid'] = 10000+$value['id'];
         }
-    	$this -> assign('list',$list); 
-
+        $Page->setConfig('next', '下一页');
+        $Page->setConfig('prev', '上一页');
+        $show = $Page->show(); 
+		$this->assign('page', urldecode($show)); // 赋值分页输出
+        $this->assign("list",$list);
+        $this->assign('index','list');
     	$this -> display();
+    	
     }
     //登录
     public function login()
@@ -65,6 +72,8 @@ class IndexController extends Controller
         session_destroy();
         $this->success("退出成功",U("Home/index/login"));
     }
+
+
     //常用联系人
     public function table_complete()
     {
@@ -76,27 +85,46 @@ class IndexController extends Controller
     	}else{
     		$where = array('a.uid'=>$_SESSION['user']['id']);
     	}
-    	$list = M('common_user a')->field('a.id,b.username,b.tel,a.ctime')->where($where)->join('left join a_user b on b.id = a.teluserid')->select();
-    	$this -> assign('list',$list);  
+		
+		$count = M("common_user")->where('uid='.$_SESSION['user']['id'])->count();
+        $Page = new \Think\Page($count,4);
+    	$list = M('common_user a')->field('a.id,b.username,b.tel,a.ctime')->where($where)->join('left join a_user b on b.id = a.teluserid')->limit($Page->firstRow.','.$Page->listRows)->select();
+    	//$this -> assign('list',$list); 
+		$Page->setConfig('next', '下一页');
+        $Page->setConfig('prev', '上一页');
+        $show = $Page->show(); 
+		$this->assign('page', urldecode($show)); // 赋值分页输出
+        $this->assign("list",$list);
+        $this->assign('index','list');
     	$this -> display();
     }
-	//添加常用联系人
+	
+	
+
+    
+    
+	
+	//添加联系人
+	
     public function searchCommUser()
     {
         if(!$_SESSION['user']){
              $this->error("登录后访问",U("Home/index/login"));
         }
-
-            $data = I('get.'); 
- 
+            $data = I('get.');    
             $data['teluserid'] = $data['userid']; 
             $data['uid'] = $_SESSION['user']['id']; 
-            $data['ctime'] = date('Y-m-d H:i:s');
-         
-            M('common_user')->add($data); 
-            $this -> success('添加成功',U('Home/index/table_complete'));die;  
+            $data['ctime'] = date('Y-m-d H:i:s');        
+            $res= M('common_user')->add($data); 
+			if($res){
+                    $this->success("添加成功",U("Home/index/table_complete"));die;
+                }else{
+                    $this->error("添加失败",U("Home/index/table_complete"));
+                }
+            //$this -> success('添加成功',U('Home/index/table_complete'));die;  
     }
-    //查询常用联系人
+	
+    //搜索常用联系人
     public function addCommonUser()
     {
     	if(!$_SESSION['user']){
@@ -107,11 +135,19 @@ class IndexController extends Controller
         }else{
             $where = 'a.status >0 and a.id != '.$_SESSION['user']['id'];
         }
-        $list = M('user a')->field('a.*,b.title')->where($where)->join('left join a_bumen b on b.id = a.bumen')->select(); 
+		$count=M('user')->where('status>0')->count();
+		$Page = new \Think\Page($count,4);
+        $list = M('user a')->field('a.*,b.title')->where($where)->join('left join a_bumen b on b.id = a.bumen')->limit($Page->firstRow.','.$Page->listRows)->select(); 
         foreach ($list as $key => $value) {
             $list[$key]['userid'] = 10000+$value['id'];
         }
-        $this -> assign('list',$list); 
+		$Page->setConfig('next', '下一页');
+        $Page->setConfig('prev', '上一页');
+        $show = $Page->show(); 
+		$this->assign('page', urldecode($show)); // 赋值分页输出
+		$this->assign("list",$list);
+        $this->assign('index','list');
+        
     	$this -> display();
     }
     //删除常用联系人
@@ -119,8 +155,9 @@ class IndexController extends Controller
     {
     	$data['id'] = I('get.id');
     	M('common_user')->where($data)->delete();
-    	$this -> redirect('/Home/index/table_complete');
+    	$this -> redirect('/Home/index/table_complete');//重新定义URL地址
     }
+	
     //个人中心
     public function form_validate()
     {
@@ -143,8 +180,14 @@ class IndexController extends Controller
     			$login_success['id'] = $_SESSION['user']['id'];
                 $_SESSION['user'] = $login_success;
     		}
-    		M('user')->save($data);
-    		$this -> success('修改成功',U('Home/index/form_validate'));die; 
+    		$res=M('user')->save($data);
+			if($res){
+				$this->success("修改成功",U('Home/index/form_validate'));die;	
+			}else{
+				$this->success("修改失败",U('Home/index/form_validate'));
+			}
+
+//  	this -> success('修改成功',U('Home/index/form_validate'));die; 
     	}
     	$list = M('user a')->field('a.*,b.title')->where(array('a.id'=>$_SESSION['user']['id']))->join('left join a_bumen b on b.id = a.bumen')->find();
 
@@ -162,8 +205,13 @@ class IndexController extends Controller
     		$data = I('post.'); 
     		$data['uid'] = $_SESSION['user']['id']; 
     		$data['ctime'] = date('Y-m-d H:i:s');  
-    		M('message')->add($data);
-    		$this -> success('反馈成功',U('Home/index/form_basic'));die; 
+    		$res=M('message')->add($data);
+			if($res){
+				$this -> success('反馈成功',U('Home/index/form_basic'));die;	
+			}else{
+				$this -> error('反馈失败',U('Home/index/form_basic'));
+			}
+    		 
     	}
     	$this -> display();
     }  

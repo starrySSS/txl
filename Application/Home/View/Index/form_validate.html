@@ -72,7 +72,7 @@
 						      
 						    </li> 
 						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-cog"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
 						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
 						        <li><a href="__CONTROLLER__/form_validate.html" class="am-cf"> 个人中心</a></li>
 						        <li><a href="__CONTROLLER__/form_basic.html">意见反馈</a></li>   
@@ -102,7 +102,7 @@
 						<div class="am-u-sm-12">
 							<div class="card-box"> 
 								
-								<form action="" class="am-form" data-am-validator action="__SELF__" method="post"  enctype="multipart/form-data">
+								<form action=""   action="__SELF__" method="post"  enctype="multipart/form-data">
 								  <fieldset> 
 								  <div class="am-form-group">
 								      <label for="doc-vld-name-2">员工编号：{$list.userid}</label>
@@ -110,18 +110,18 @@
 								    </div>
 								    <div class="am-form-group" style="width: 50%">
 								      <label for="doc-vld-name-2">用户名：</label>
-								        <input type="text" id="doc-vld-name-2" minlength="2" placeholder="输入用户名（至少 2 个字符）"  name="username"  value="{$list.username}" required/>  
+								        <input type="text" id="doc-vld-name-2" minlength="2" placeholder="输入用户名（至少 2 个字符）" class='am-form-field am-round' name="username"  value="{$list.username}" required/>  
 								       
 								    </div>
 								
-								    <div class="am-form-group">
-								      <label for="doc-vld-email-2">邮箱：
-								      <input type="email" id="doc-vld-email-2" placeholder="输入邮箱" value='{$list.email}' name="email"  required/></label>
+								    <div class="am-form-group" style="width: 50%">
+								      <label for="doc-vld-email-2">邮箱：</label>
+								      <input type="email" class='am-form-field am-round' id="doc-vld-email-2" minlength="2" placeholder="输入邮箱" value='{$list.email}' name="email"  required/>
 								    </div>
 								
 								    <div class="am-form-group" style="width: 50%">
 								      <label for="doc-vld-url-2">电话：</label>
-								      <input type="number" id="doc-vld-url-2" placeholder="输入电话号码" value='{$list.tel}' name="tel" required/>
+								      <input type="number" id="doc-vld-url-2" placeholder="输入电话号码"  class='am-form-field am-round' value='{$list.tel}' name="tel" required/>
 								    </div>
 								
 								    <div class="am-form-group">
@@ -155,9 +155,13 @@
 								      <label>加入时间： {$list.ctime|substr=0,10}</label> 
 								    </div>
 								    <div class="am-form-group">
-								      <label>修改头像： </label>
-								      <input type="file" id="doc-vld-url-2" name="file" /> 
-								    </div>
+	
+								    <div class="am-form-group am-form-file">
+									  	<button type="button" class="am-btn am-btn-default am-btn-sm">
+									    	<i class="am-icon-cloud-upload"></i> 选择要修改的头像</button>
+									    	<input type="file" id="doc-vld-url-2" name="file"  multiple/>
+									  	
+									</div>
 								    <!-- <div class="am-form-group">
 								      <label for="doc-select-1">下拉单选框</label>
 								      <select id="doc-select-1" required>
@@ -172,6 +176,9 @@
 								     
 								
 								    <input class="am-btn am-btn-secondary" type="submit" value="提交"></input>
+								    
+								    
+								    
 								  </fieldset>
 								</form>
 								

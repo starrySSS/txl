@@ -10,11 +10,19 @@ class IndexController extends BaseController {
     //首页用户列表
     public function index()
     {
-        $home = M("user a")->field('a.*,b.title')->join('left join a_bumen b on b.id = a.bumen')->where('a.status > 0')->select();
+    	$count = M("user")->where('status > 0')->count();
+        $Page = new \Think\Page($count,4);
+		echo $Page;
+        $home = M("user a")->field('a.*,b.title')->join('left join a_bumen b on b.id = a.bumen')->where('a.status > 0')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$Page->setConfig('next', 'next');
+        $Page->setConfig('prev', 'prev');
+        $show = $Page->show(); // 分页显示输出
+        $this->assign('page', urldecode($show)); // 赋值分页输出
         $this->assign("home",$home);
         $this->assign('index','index');
         $this->display();
     }
+	
      //添加、修改用户
     public function add()
     {
@@ -94,12 +102,21 @@ class IndexController extends BaseController {
              $this->ajaxReturn("-1");
         }
     }
-       // 用户操作日志
-    public function product(){
-        $log = M("log a")->field('a.*,b.username')->order('a.id asc')->join('left join a_user b on b.id = a.uid')->select(); 
-        $this->assign("log",$log); 
+
+	//用户日志
+    public function product()
+	{
+		$count=M("bumen")->count();
+		$Page=new \Think\Page($count,8);
+		$log =M("log a")->field('a.*,b.username')->order('a.id desc')->join('left join a_user b on b.id=a.uid')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$Page->setConfig('next','next');
+		$Page->setConfig('prev','prev');
+		$show = $Page->show(); // 分页显示输出
+        $this->assign('page', urldecode($show)); // 赋值分页输出
+        $this->assign("log",$log);
+        $this->assign('index','log');
         $this->display();
-    }
+	}
     //部门
     public function news(){
         $count = M("bumen")->where("status=1")->count();
@@ -144,10 +161,16 @@ class IndexController extends BaseController {
         $this->assign("bumen",$news);  
         $this->display();
     }
+	
+//	$log =M("log a")->field('a.*,b.username')->order('a.id desc')->join('left join a_user b on b.id=a.uid')->limit($Page->firstRow.','.$Page->listRows)->select();
+//	
+	
+	
     //导出通讯录
     public function getData()
     { 
-        $data = M('user')->field('id,username,tel')->where('status >0')->select();
+        $data = M('user a')->field('a.id,a.username,a.tel,a.email,b.title')->join('left join a_bumen b on b.id=a.bumen')->where('a.status>0')->select();
+		echo $date;
         sort($data); 
         //dump($data);die;
         $this -> push($data,'通讯录');
@@ -165,7 +188,9 @@ class IndexController extends BaseController {
                      //Excel的第A列，uid是你查出数组的键值，下面以此类推
                       ->setCellValue('A'.$num, $num)    
                       ->setCellValue('B'.$num, $v['username'])
-                      ->setCellValue('C'.$num, $v['tel']);
+                      ->setCellValue('C'.$num, $v['tel'])
+					  ->setCellValue('d'.$num, $v['email'])
+					  ->setCellValue('e'.$num, $v['title']);
         }
             $objPHPExcel->getActiveSheet()->setTitle('通讯录');
             $objPHPExcel->getActiveSheet()->getStyle("$letter[$i]1")->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
@@ -180,20 +205,17 @@ class IndexController extends BaseController {
      //留言展示
      public function getMsg()
      {
-        $message =  M('message a')->field('a.*,b.username')->join('left join a_user b on b.id = a.uid')->select();
-        $this->assign("message",$message);  
+     	$count = M("message")->count();
+        $Page = new \Think\Page($count,8);
+        $message =  M('message a')->field('a.*,b.username')->join('left join a_user b on b.id = a.uid')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$Page->setConfig('next', '下一页');
+        $Page->setConfig('prev', '上一页');
+        $show = $Page->show(); // 分页显示输出
+        $this->assign('page', urldecode($show)); // 赋值分页输出
+        $this->assign("message",$message);
+        $this->assign('index','message');
         $this->display();
+		
+        
      }
-	 //分页
-	public function showAllUsers() 
-	{
-	    $m = M('User');   
-	    $where = "id>10";
-	    $count = $m->where($where)->count();
-	    $p = getpage($count,1);
-	    $list = $m->field(true)->where($where)->order('id')->limit($p->firstRow, $p->listRows)->select();
-	    $this->assign('select', $list); // 赋值数据集
-	    $this->assign('page', $p->show()); // 赋值分页输出
-	    $this->display();
-  	} 
 }

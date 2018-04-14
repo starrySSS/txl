@@ -73,7 +73,7 @@
                   
                 </li> 
                 <li class="admin-parent">
-                  <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                  <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-cog"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
                   <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
                     <li><a href="__CONTROLLER__/form_validate.html" class="am-cf"> 个人中心</a></li>
                     <li><a href="__CONTROLLER__/form_basic.html">意见反馈</a></li>   
@@ -129,7 +129,7 @@
             <table class="am-table am-table-striped am-table-hover table-main">
               <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" /></th> <th class="table-title">姓名</th><th class="table-type">手机</th><th class="table-date am-hide-sm-only">修改日期</th><th class="table-set am-hide-sm-only">操作</th>
+                <th class="table-num">序号</th> <th class="table-title">姓名</th><th class="table-type">手机</th><th class="table-date am-hide-sm-only">修改日期</th><th class="table-set am-hide-sm-only">操作</th>
               </tr>
               </thead>
               <tbody>
@@ -144,15 +144,25 @@
                     <div class="am-btn-group am-btn-group-xs">
                      <!--  <button class="am-btn am-btn-default am-btn-xs am-text-secondary am-hide-sm-only"><span class="am-icon-pencil-square-o"></span> <a href="__CONTROLLER__/addCommonUser?id={$v.id}">编辑</a></button> -->
                       <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> <a href="__CONTROLLER__/delCommonUser?id={$v.id}">删除</a></button>
+                      
                       <!-- 
                       <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button> -->
                     </div>
                   </div>
+                  
                 </td>
               </tr>
               </volist>
               </tbody>
             </table>
+            <div class="am-u-lg-12">
+                <div class="am-cf">
+                    <div class="am-fr">
+                        {$page}
+                    </div>
+                </div>
+                <hr>
+            </div>
             <!-- <div class="am-cf"> 
               <div class="am-fr">
                 <ul class="am-pagination">

@@ -1,12 +1,10 @@
 <include file="Public:header" />
         <div class="tpl-content-wrapper">
-            <div class="tpl-content-page-title">
-                添加
-            </div>
+            
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 列表
+                        <span class="am-icon-navicon"></span> 列表
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -72,10 +70,11 @@
                                   <div class="am-form-group">
                                     <label for="user-Department" class="am-u-sm-3 am-form-label">部门<span class="tpl-form-line-small-title">Department</span></label>
                                     <label class="am-radio-inline">
-                                    <select id="user-Department"  class="am-u-sm-9" name="bumen" required>
+                                    <select id="user-Department"  class="am-u-sm-9" name="bumen" >
                                         <volist name='bumen' id='v'>
                                         <option value="{$v['id']}" <?php if($home['bumen'] == $v['id']){echo ' selected = "selected"';}?>>{$v.title}</option> 
                                         </volist>
+                                        <span class="am-form-caret"></span>
                                     </select> 
                                     </label>
                                 </div>
@@ -90,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tpl-alert"></div>
+                <!--<div class="tpl-alert"></div>-->
             </div>
 
         </div>

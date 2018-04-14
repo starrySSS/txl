@@ -1,0 +1,24 @@
+[ 2018-04-14T09:25:49+08:00 ] ::1 /tongxun3/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T09:26:18+08:00 ] ::1 /tongxun3/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T09:26:26+08:00 ] ::1 /tongxun3/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-14T09:26:28+08:00 ] ::1 /tongxun3/Public/Admin/img/logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001569s ]
+ERR: 无法加载模块:Public
+

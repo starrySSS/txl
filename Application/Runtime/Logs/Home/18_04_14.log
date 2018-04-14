@@ -1,0 +1,321 @@
+[ 2018-04-14T09:26:05+08:00 ] ::1 /tongxun3/index.php/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun3\Application\Home\Controller\IndexController.class.php 第 9 行.
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun3\Application\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000463s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+
+[ 2018-04-14T09:26:05+08:00 ] ::1 /tongxun3/index.php/home/index/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002174s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun3\Application\Home\Controller\IndexController.class.php 第 9 行.
+ERR: 非法操作:css
+
+[ 2018-04-14T09:26:11+08:00 ] ::1 /tongxun3/index.php/Home/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun3\Application\Home\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002211s ]
+
+[ 2018-04-14T09:26:39+08:00 ] ::1 /tongxun3/index.php/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002597s ]
+NOTIC: [8] Undefined index: user F:\wamp\www\tongxun3\Application\Home\Controller\IndexController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `a_user` WHERE `tel` = '18623358906' AND `password` = '12345' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001793s ]
+
+[ 2018-04-14T09:26:39+08:00 ] ::1 /tongxun3/index.php/Home/Index/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002759s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','pintuer','2018-04-14 09:26:39') [ RunTime:0.0027s ]
+ERR: 非法操作:css
+
+[ 2018-04-14T09:26:41+08:00 ] ::1 /tongxun3/index.php/Home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002564s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0101s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','index','2018-04-14 09:26:41') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_user` WHERE ( status>0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0100s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status >0 and a.id != 26 ) LIMIT 0,8   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003328s ]
+
+[ 2018-04-14T09:26:44+08:00 ] ::1 /tongxun3/index.php/Home/Index/table_complete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002486s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0089s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','table_complete','2018-04-14 09:26:44') [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common_user` WHERE ( uid=26 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0093s ]
+SQL: SELECT a.id,b.username,b.tel,a.ctime FROM a_common_user a left join a_user b on b.id = a.teluserid  WHERE a.uid = '26' LIMIT 0,4   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000770s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003481s ]
+
+[ 2018-04-14T09:26:46+08:00 ] ::1 /tongxun3/index.php/Home/Index/addCommonUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003789s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0118s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','','2018-04-14 09:26:45') [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_user` WHERE ( status>0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0110s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status >0 and a.id != 26 ) LIMIT 0,4   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000639s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002845s ]
+
+[ 2018-04-14T09:26:47+08:00 ] ::1 /tongxun3/index.php/Home/Index/searchCommUser/userid/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002764s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0101s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','','2018-04-14 09:26:47') [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0105s ]
+SQL: INSERT INTO `a_common_user` (`teluserid`,`uid`,`ctime`) VALUES ('19','26','2018-04-14 09:26:47') [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002545s ]
+
+[ 2018-04-14T09:26:48+08:00 ] ::1 /tongxun3/index.php/Home/Index/searchCommUser/userid/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002671s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0097s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','pintuer','2018-04-14 09:26:47') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0099s ]
+SQL: INSERT INTO `a_common_user` (`teluserid`,`uid`,`ctime`) VALUES ('0','26','2018-04-14 09:26:48') [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002459s ]
+
+[ 2018-04-14T09:26:50+08:00 ] ::1 /tongxun3/index.php/Home/index/table_complete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002389s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0095s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','table_complete','2018-04-14 09:26:50') [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common_user` WHERE ( uid=26 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0091s ]
+SQL: SELECT a.id,b.username,b.tel,a.ctime FROM a_common_user a left join a_user b on b.id = a.teluserid  WHERE a.uid = '26' LIMIT 0,4   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000746s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002255s ]
+
+[ 2018-04-14T09:27:26+08:00 ] ::1 /tongxun3/index.php/Home/Index/addCommonUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002795s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0108s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','','2018-04-14 09:27:26') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_user` WHERE ( status>0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_user` [ RunTime:0.0119s ]
+SQL: SELECT a.*,b.title FROM a_user a left join a_bumen b on b.id = a.bumen  WHERE ( a.status >0 and a.id != 26 ) LIMIT 0,4   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003015s ]
+
+[ 2018-04-14T09:27:28+08:00 ] ::1 /tongxun3/index.php/Home/Index/searchCommUser/userid/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003031s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0101s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','','2018-04-14 09:27:28') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0102s ]
+SQL: INSERT INTO `a_common_user` (`teluserid`,`uid`,`ctime`) VALUES ('20','26','2018-04-14 09:27:28') [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002401s ]
+
+[ 2018-04-14T09:27:28+08:00 ] ::1 /tongxun3/index.php/Home/Index/searchCommUser/userid/css/pintuer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002651s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0095s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','pintuer','2018-04-14 09:27:28') [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0094s ]
+SQL: INSERT INTO `a_common_user` (`teluserid`,`uid`,`ctime`) VALUES ('0','26','2018-04-14 09:27:28') [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001913s ]
+
+[ 2018-04-14T09:27:30+08:00 ] ::1 /tongxun3/index.php/Home/index/table_complete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002408s ]
+SQL: SHOW COLUMNS FROM `a_log` [ RunTime:0.0097s ]
+SQL: INSERT INTO `a_log` (`uid`,`action`,`ctime`) VALUES ('26','table_complete','2018-04-14 09:27:30') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common_user` WHERE ( uid=26 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `a_common_user` [ RunTime:0.0091s ]
+SQL: SELECT a.id,b.username,b.tel,a.ctime FROM a_common_user a left join a_user b on b.id = a.teluserid  WHERE a.uid = '26' LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000695s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002514s ]
+

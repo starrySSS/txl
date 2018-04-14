@@ -4,14 +4,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>企业通讯录</title>
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/amazeui.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/amazeui.css" />
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/core.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/menu.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/index.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/admin.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/page/typography.css" />
-		<link rel="stylesheet" href="/tongxun/Public/Home/css/page/form.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/core.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/menu.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/index.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/admin.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/page/typography.css" />
+		<link rel="stylesheet" href="/tongxun3/Public/Home/css/page/form.css" />
 	</head>
 	<body>
 		<!-- Begin page -->
@@ -30,7 +30,7 @@
 					<!-- <li class="hidden-xs am-hide-sm-only">
 					                        <form role="search" class="app-search">
 					                            <input type="text" placeholder="Search..." class="form-control">
-					                            <a href=""><img src="/tongxun/Public/Home/img/search.png"></a>
+					                            <a href=""><img src="/tongxun3/Public/Home/img/search.png"></a>
 					                        </form>
 					                    </li> -->
 				</ul>
@@ -51,7 +51,7 @@
 				    	<!-- User -->
 						<div class="user-box">
 	                        <div class="user-img">
-	                            <img  src="/tongxun/Public<?php echo ($_SESSION['user']['touxiang']); ?>" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive" >
+	                            <img  src="/tongxun3/Public<?php echo ($_SESSION['user']['touxiang']); ?>" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive" >
 	                             
 	                            <div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="false"></i></div>
 	                        </div>
@@ -67,16 +67,16 @@
 	                    <!-- End User -->
 	            
 						 <ul class="am-list admin-sidebar-list">
-						    <li><a href="/tongxun/index.php/Home/Index/index.html"><span class="am-icon-home"></span> 通讯录</a></li>
+						    <li><a href="/tongxun3/index.php/Home/Index/index.html"><span class="am-icon-home"></span> 通讯录</a></li>
 						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}" href="/tongxun/index.php/Home/Index/table_complete.html"><span class="am-icon-table"></span> 常用联系人  </a> 
+						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}" href="/tongxun3/index.php/Home/Index/table_complete.html"><span class="am-icon-table"></span> 常用联系人  </a> 
 						    </li> 
 						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-cog"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
 						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-						        <li><a href="/tongxun/index.php/Home/Index/form_validate.html" class="am-cf"> 个人中心</a></li>
-						        <li><a href="/tongxun/index.php/Home/Index/form_basic.html">意见反馈</a></li>   
-						        <li><a href="/tongxun/index.php/Home/Index/logout.html">退出</a></li>   
+						        <li><a href="/tongxun3/index.php/Home/Index/form_validate.html" class="am-cf"> 个人中心</a></li>
+						        <li><a href="/tongxun3/index.php/Home/Index/form_basic.html">意见反馈</a></li>   
+						        <li><a href="/tongxun3/index.php/Home/Index/logout.html">退出</a></li>   
 						      </ul>
 						    </li>
 						  </ul>
@@ -102,7 +102,7 @@
 				<!-- col start -->
 				<div class="am-u-md-6" style="width: 100%">
 					<div class="card-box"> 
-						<form class="am-form" action="/tongxun/index.php/Home/Index/form_basic.html" method="post"> 
+						<form class="am-form" action="/tongxun3/index.php/Home/index/form_basic.html" method="post"> 
 						    <div class="am-form-group">
 						    	<div class="am-g">
 							      <label class="am-u-md-2 am-md-text-right am-padding-left-0" for="doc-ta-1">意见反馈：</label>
@@ -123,10 +123,10 @@
 		<!-- navbar -->
 		<a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
 		
-		<script type="text/javascript" src="/tongxun/Public/Home/js/jquery-2.1.0.js" ></script>
-		<script type="text/javascript" src="/tongxun/Public/Home/js/amazeui.min.js"></script>
-		<script type="text/javascript" src="/tongxun/Public/Home/js/app.js" ></script>
-		<script type="text/javascript" src="/tongxun/Public/Home/js/blockUI.js" ></script>
+		<script type="text/javascript" src="/tongxun3/Public/Home/js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript" src="/tongxun3/Public/Home/js/amazeui.min.js"></script>
+		<script type="text/javascript" src="/tongxun3/Public/Home/js/app.js" ></script>
+		<script type="text/javascript" src="/tongxun3/Public/Home/js/blockUI.js" ></script>
 	</body>
 	
 </html>

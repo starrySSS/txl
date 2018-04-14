@@ -72,7 +72,7 @@
 						      
 						    </li> 
 						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-cog"></span> 系统设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
 						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
 						        <li><a href="__CONTROLLER__/form_validate.html" class="am-cf"> 个人中心</a></li>
 						        <li><a href="__CONTROLLER__/form_basic.html">意见反馈</a></li>   
@@ -80,8 +80,8 @@
 						      </ul>
 						    </li>
 						  </ul>
-				</div>	  
-			</div>
+				</div>
+				  </div>
 				  <!-- sidebar end -->
     
 				<!--</div>
@@ -121,17 +121,27 @@
                                         <p class="text-muted m-b-5 font-13">邮箱：{$v.email}</p>
                                      	<p class="text-muted m-b-5 font-13"><a href="tel:   {$v.tel}"> tel:{$v.tel}</a></p> 
                                         <small class="text-warning"><b>部门：{$v.title}</b></small>  
-                                         <h4 class="m-t-0 m-b-5 font-600"><a href="__CONTROLLER__/searchCommUser/userid/{$v.id}">添加到常用联系人</a></h4>
+                                         <h4 class="m-t-0 m-b-5 font-600 tpl-btn-bg-color-success"><a href="__CONTROLLER__/searchCommUser/userid/{$v.id}">添加到常用联系人</a></h4>
                                     </div>
                                 </div>
-                            </div>
+                            
+							</div>
 						</div>
 						 </volist> 	
 				</div>
 				<!-- col end --> 
-			</div> 
+		
+		    <div class="am-u-lg-12">
+                <div class="am-cf">
+                    <div class="am-fr">
+                        {$page}
+                    </div>
+                </div>
+                <hr>
+            </div>
+		</div> 
 						
-			</div> 
+		</div> 
 		</div>
 		<!-- end right Content here -->
 		<!--</div>-->
